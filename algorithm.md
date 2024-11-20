@@ -1,16 +1,6 @@
 # Algorithm Document
 
 
-Purpose: Get the file name from the user.  
-Name: get_file_name  
-Parameter: none  
-Return: filename  
-Algorithm:  
-1. Prompt the user to enter the name of the file they want to use
-2. while the filename is not a file
-   1. output "file not found"   
-   2. prompt the user to enter the name of the file they want to use
-3. return the filename
 
 Purpose: read data from file to a table, 
 Name: read_data_to_table    
@@ -41,14 +31,23 @@ Algorithm:
    3. append this difference to the row
 2. return the table
 
+
+Purpose: Ask the user for a new output file name  
+Name: output_name  
+Parameter: none  
+Return: filename 
+Algorithm:  
+1. Prompt the user to input the new output files name
+2. remove punctuation 
+3. display the new file name
+2. return the new name
+
 Purpose:  write each the new table onto output file
 Name: write_table_to_file  
-Parameter: table   
-Return: file  
+Parameter: table, output_filename   
+Return: none  
 Algorithm:  
-
-Purpose:  
-Name:  
-Parameter:  
-Return:  
-Algorithm:  
+1. open the output file for writing
+2. for each row in the table
+   1. write each row onto the file sepa1 rated with commas
+3. close the file
