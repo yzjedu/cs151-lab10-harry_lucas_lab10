@@ -51,3 +51,15 @@ Algorithm:
 2. for each row in the table
    1. write each row onto the file sepa1 rated with commas
 3. close the file
+
+Purpose: Find and display the movie with the highest profit
+Name: display_highest_profit_movie
+Parameter: table
+Return: None
+Algorithm:
+1. make an empty list
+2. set value to 0
+3. for each row in the table
+   1. if the profit is greater than the value
+      1. set the highest profit movie to the row
+      2. set the value to the profit
